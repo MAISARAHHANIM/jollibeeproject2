@@ -1,0 +1,193 @@
+<html>
+<head>
+  <!-- to call CSS from file index.css -->
+  <title>Jollibee Malaysia</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<style>
+
+  /* for order form */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    
+  }
+
+</style>
+<body>
+    <!-- company logo -->
+  
+    <img src="jollibeelogo.jpg" width="8%">
+  <!-- topbar menu -->
+    <div class="scrollmenu">
+      
+         <a href="index.html">Home</a>
+         <a href="findus.html">Find Us</a>
+         <a href="about.html">About</a>
+         <a href="menu.html">Menu</a>
+         <a href="order.html">Order</a>
+        
+         <a href="contact.html">Contact</a>
+               
+     </div>
+
+     <div class="container">
+      <img src="Images/burgerbanner.png" width="100%">
+      <div class="centered"><b>CONTACT</b></div>
+     </div>
+
+
+     <h1> Contact Us Now</h1>
+     <div class="container" >
+       <form action="/action_page.php" align="center">
+         <label for="fname">First Name</label>
+         <input type="text" id="fname" name="firstname" placeholder="Your name..">
+     
+         <label for="lname">Last Name</label>
+         <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+         
+         <label for="email">Email</label>
+         <input type="text" id="email" name="email" placeholder="Insert email">
+     
+         <label for="country">Country</label>
+         <select id="country" name="country">
+           <option value="Malaysia">Malaysia</option>
+           <option value="Brunei">Brunei</option>
+           <option value="Singapore">Singapore</option>
+           <option value="Philiphines">Philiphines</option>
+           <option value="Indonesia">Indonesia</option>
+         </select>
+
+     
+         <label for="subject">Subject</label>
+         <textarea id="subject" name="subject" placeholder="Your message" style="height:200px"></textarea>
+     
+         <input type="submit" value="Submit">
+       </form>
+     </div>
+    <!-- Slide show for poster-->    
+    <div>
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 6</div>
+          <img src="Images/burger_joy.jpg" style="width:100%">
+          <div class="text">Burger</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 6</div>
+          <img src="Images/chicken_joy.png" style="width:100%">
+          <div class="text">Chicken</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 6</div>
+          <img src="Images/classic_joy.png" style="width:100%">
+          <div class="text">Classic</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 6</div>
+          <img src="Images/hotdog_joy.png" style="width:100%">
+          <div class="text">Hotdog</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 6</div>
+          <img src="Images/tender_joy.png" style="width:100%">
+          <div class="text">All chicken set</div>
+        </div>
+        
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+
+    </div>
+    <br>
+    <!-- button Order now -->
+    <div align="center">
+      <button class="button" type="button">Order Now!</button>
+    </div>
+
+    <div>
+      <h1 align="center">Where to find us</h1>
+      <p align="center">We currently have outlets in KL, Selangor and Sabah, </p>
+      <p align="center">with more coming soon!</p>
+    </div>
+
+     
+
+
+    <br>
+ 
+
+</body>
+<!-- Script for slide show-->
+
+<script>
+  let slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3000); // Change image every 2 seconds
+  }
+  </script>
+
+
+<!-- Footer website-->
+
+<footer class="site-footer">
+  <p align="center">Jollibee Malaysia</p>
+</footer>
+
+</html>

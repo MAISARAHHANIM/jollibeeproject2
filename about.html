@@ -1,0 +1,103 @@
+<html>
+<head>
+  <!-- to call CSS from file index.css -->
+  <title>Jollibee Malaysia</title>
+  <link rel="stylesheet" href="about.css">
+</head>
+
+
+
+</style>
+<body>
+    <!-- company logo -->
+  
+    <img src="jollibeelogo.jpg" width="8%">
+  <!-- topbar menu -->
+    <div class="scrollmenu">
+      
+         <a href="index.html">Home</a>
+         <a href="findus.html">Find Us</a>
+         <a href="about.html">About</a>
+         <a href="menu.html">Menu</a>
+         <a href="order.html">Order</a>
+         
+         <a href="contact.html">Contact</a>
+               
+     </div>
+
+     <div class="container">
+      <img src="Images/friedchiccrop.jpg" width="100%">
+      <div class="centered"><b>ABOUT US.</b></div>
+
+      <h1>Over 1,400 stores and counting…</h1>
+
+      <p>Jollibee is famous across the world for delicious crispy fried chicken and fast-food classics with a tropical twist. </p>
+      <p>  Founded in 1978 by Tony Tan Caktiong in the Philippines, the company was built up from humble ice cream store beginnings, </p>
+      <p>  then later on expanded to hot food. Jollibee quickly became the market leader in the Philippines’ </p>
+      <p> fast food industry and by 1998, was a globally successful business. </p>
+      <p>  The brand continues to be owned by Jollibee Group with over 1,400 locations across Asia, Europe, the US and the UK. </p>
+
+      <br>
+
+      <p>Jollibee serves up the crispiest, juiciest and tastiest fried chicken around, with a diverse menu including chicken burgers, </p>
+        <p>hotdogs, fries, desserts and refreshing drinks. Chickenjoy is our signature dish based on the family’s special recipe, </p>
+        <p>  hand-breaded in store for extra crispiness. Another favourite is Jolly Spaghetti, made with a Filipino inspired sweet-style sauce, </p>
+        <p>loaded with layers of cheese and hot dog slices. These unique dishes have earned the brand a cult following around the globe, </p>
+        <p> from Hong Kong to New York and now here in the UK.</p>
+
+        <br>
+
+        <p>Parent company, Jollibee Group, now has over 5,800 stores globally and operates in 33 countries. </p>
+          <p>In the U.S., Jollibee Group owns the major food brands Smashburger and The Coffee Bean & Tea Leaf. </p>
+          <p> The company also owns the Filipino franchise for Burger King. To this day, Jollibee still outperforms </p>
+          <p> both McDonald’s and KFC in the Philippines.</p>
+      <br>
+        <p>Looking to the future, Jollibee intends to open 120 stores in Malaysia in the next 10 years </p>
+
+     </div>
+
+<br>
+     
+
+   
+    <br>
+    
+     
+
+
+    <br>
+ 
+
+</body>
+<!-- Script for slide show-->
+
+<script>
+  let slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3000); // Change image every 2 seconds
+  }
+  </script>
+
+
+<!-- Footer website-->
+
+<footer class="site-footer">
+  <p align="center">Jollibee Malaysia</p>
+</footer>
+
+</html>

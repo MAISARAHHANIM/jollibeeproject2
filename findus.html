@@ -1,0 +1,108 @@
+<html>
+<head>
+  <!-- to call CSS from file index.css -->
+  <title>Jollibee Malaysia</title>
+  <link rel="stylesheet" href="findus.css">
+</head>
+
+
+
+</style>
+<body>
+    <!-- company logo -->
+  
+    <img src="jollibeelogo.jpg" width="8%">
+  <!-- topbar menu -->
+    <div class="scrollmenu">
+      
+         <a href="index.html">Home</a>
+         <a href="findus.html">Find Us</a>
+         <a href="about.html">About</a>
+         <a href="menu.html">Menu</a>
+         <a href="order.html">Order</a>
+         
+         <a href="contact.html">Contact</a>
+               
+     </div>
+
+     <div class="container">
+      <img src="Images/friedchiccrop.jpg" width="100%">
+      <div class="centered"><b>FIND US.</b></div>
+     </div>
+
+<br>
+     <div class="mycontainer" align="center">
+      <div>
+        <!-- Embed Google map-->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254939.23001250118!2d101.49274778523215!3d3.243891955637328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4ae7f2b662d5%3A0x24640a80dedccc95!2sPavilion%20Bukit%20Jalil!5e0!3m2!1sen!2smy!4v1721450004996!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <h2>Pavilion Bukit Jalil</h2>
+        <p>L01.99 Pavilion Bukit Jalil,</p>
+        <p>No. 2, Persiaran Jalil 8,</p>
+        <p>Bandar Bukit Jalil,</p>
+        <p>P57000 Kuala Lumpur.</p>
+        <br>
+        <p>Mon - Sun</p>
+        <p>11AM - 10PM</p>
+        <p>Phone: 03-8682 1883</p>
+        <br>
+            
+      </div>
+
+      <div>
+        <!-- Embed Google map-->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.8744509174753!2d101.71997438387741!3d3.127876745172762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc3614023d8ac1%3A0x16c2db2b9f094ca2!2sSunway%20Velocity%20Mall!5e0!3m2!1sen!2smy!4v1721450074823!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <h2>Sunway Velocity</h2>
+        <p>EG002A, Ground Floor, IOI Mall</p>
+        <p>Puchong, Jalan Puchong,</p>
+        <p>Bandar Puchong Jaya, 47170</p>
+        <p>Puchong, Selangor</p>
+        <br>
+        <p>Mon - Sun</p>
+        <p>11AM - 10PM</p>
+        <p>Phone:  03-8082 0272</p>
+        <br> 
+      </div>
+    </div>
+
+   
+    <br>
+    
+     
+
+
+    <br>
+ 
+
+</body>
+<!-- Script for slide show-->
+
+<script>
+  let slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3000); // Change image every 2 seconds
+  }
+  </script>
+
+
+<!-- Footer website-->
+
+<footer class="site-footer">
+  <p align="center">Jollibee Malaysia</p>
+</footer>
+
+</html>
